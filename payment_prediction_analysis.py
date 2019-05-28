@@ -64,7 +64,11 @@ error_percentage_train = sum(error_train)/sum(y_train) * 100
 
 ''' plotting '''
 import matplotlib.pyplot as plt
-fig = plt.figure(figsize=(10,5))
+import matplotlib
+matplotlib.rcParams.update({'font.size': 9})
+fig = plt.figure(figsize=(8,4))
+fig.suptitle("Daily Payment Prediction Performance", fontsize=12, fontweight='bold')
+
 ax = plt.subplot(122)
 
 # plotting test performance
@@ -81,8 +85,8 @@ plt.xticks([])
 ax.grid(axis='y')
 plt.ylim(0, 600)
 ax.text(x=0, y=-50, s="Error: %.2f" % error_percentage + "%")
-ax.legend(['Prediction', 'Payment'])
-plt.title('Test performance')
+#ax.legend(['Prediction', 'Datapoint'])
+plt.title('test data', fontsize=9)
 
 # plotting training performance
 sorted_y_train = pd.DataFrame({
@@ -100,6 +104,6 @@ plt.xticks([])
 ax2.grid(axis='y')
 plt.ylim(0, 600)
 ax2.text(x=0, y=-50, s="Error: %.2f" % error_percentage_train + "%")
-ax2.legend(['Prediction', 'Payment'])
-plt.title('Training performance')
+ax2.legend(['Prediction', 'Datapoint'])
+plt.title('training data', fontsize=9)
 plt.show()

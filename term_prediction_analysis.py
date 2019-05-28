@@ -55,7 +55,11 @@ error_percentage_train = (sum(error_train)/sum(y_train)) * 100
 
 ''' plotting '''
 import matplotlib.pyplot as plt
-fig = plt.figure(figsize=(10,5))
+import matplotlib
+matplotlib.rcParams.update({'font.size': 9})
+fig = plt.figure(figsize=(8,4))
+fig.suptitle("Payback Term Prediction Performance", fontsize=12, fontweight='bold')
+
 ax = plt.subplot(122)
 
 # plotting test performance
@@ -73,8 +77,7 @@ ax.grid(axis='y')
 plt.ylim(40, 130)
 ax.text(x=0, y=30, s="Error: %.2f" % error_percentage + "%")
 #ax.legend(['Actual term', 'Predicted term'])
-ax.text(x=0, y=0, s='test')
-plt.title('Test performance')
+plt.title('test data', fontsize=9)
 
 # plotting training performance
 sorted_y_train = pd.DataFrame({
@@ -93,5 +96,5 @@ ax2.grid(axis='y')
 plt.ylim(40, 130)
 ax2.text(x=0, y=30, s="Error: %.2f" % error_percentage_train + "%")
 ax2.legend(['Predicted term', 'Actual term'])
-plt.title('Training performance')
+plt.title('training data', fontsize=9)
 plt.show()
