@@ -21,7 +21,7 @@ The dataset used for this project was synthetically generated with random number
 
 Here is an example produced by the random data generator:
 
-<p align="center"><img width="427" height="400" src="https://github.com/salman-a-shah/MCA-Underwriter/blob/master/figures/data-generator.png"></p>
+<p align="center"><img width="377" height="406" src="https://github.com/salman-a-shah/MCA-Underwriter/blob/master/figures/data-generator.png"></p>
 
 ## Additional info
 The full blog post on this model is available here: (TBA).
