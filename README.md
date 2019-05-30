@@ -1,7 +1,9 @@
 # AI Underwriter - Demo
 This project serves to demonstrate the possibility of partial automation of the loan approval process for a merchant cash advance (MCA). The ulitmate purpose of this project was to explore the effectiveness of various machine learning models on loan underwriting. The project shows that with a few basic machine learning models, one can generate a machine that can decide whether to approve or deny a loan request with a high level of accuracy and produce reasonable offers for approved requests. Even with a small dataset, one can build a machine that extracts patterns used by a human underwriter and use them to generate offers.
 
-To observe the machine generate offers based on user provided data, run `main.py`.
+The animation below shows an example of the final model generating an offer based on user provided inputs. Run `main.py` to see it in action.
+
+<p align="center"><img width="504" height="840" src="https://thephilosophersdomain.files.wordpress.com/2019/05/aiunderwriterexample.gif?w=1000"></p>
 
 ## Model Performance
 The approval prediction model uploaded here approves/denies MCA applications with an 87-89% accuracy. 
