@@ -89,7 +89,7 @@ Basically a copy of dataset.csv. This exists to preserve an original copy of dat
 #### industry_list.csv
 A list of business types, along with the mean and std for the Gaussians used to generate realistic values for the number of deposits in `data_generator.py`.
 ## Additional info
-The full blog post on this model is available here: (TBA).
+The full blog post on this model is available [here](https://thephilosophersdomain.com/portfolio/ai-underwriter/).
 
 ## Language
 Coded entirely using python 3.7.2.
